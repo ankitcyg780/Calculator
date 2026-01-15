@@ -11,8 +11,10 @@ background-color: rgb(17, 17, 17);
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(30, 29, 29);
     border-radius: 15px;
-    max-width: 500px;
+    max-width: 360px;
     overflow: hidden;
+    width: 100%;
+    margin: auto;
 }
 #display{
     width: 100%;
@@ -24,19 +26,21 @@ background-color: rgb(17, 17, 17);
     color: white;
 }
 #key{
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     grid-template-columns: repeat(4,1fr);
     gap: 10px;
     padding: 25px;
 }
 button{
-    width: 100px;
-    height: 100px;
+    width: 23%;
+    height: 60px;
     border-radius: 50%;
     border: none;
     background-color: rgb(21, 21, 21);
     color: white;
-    font-size: 3rem;
+    font-size: 20px;
     font-weight: bold;
 cursor: pointer;
 }
@@ -57,3 +61,4 @@ button:active{
 .operator-btn:active{
     background-color: rgb(210, 147, 31);
 }
+
